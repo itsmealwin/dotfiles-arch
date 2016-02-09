@@ -1,0 +1,117 @@
+!      db    db d8888b. d88888b .d8888.  .d88b.  db    db d8888b.  .o88b. d88888b .d8888.
+!      `8b  d8' 88  `8D 88'     88'  YP .8P  Y8. 88    88 88  `8D d8P  Y8 88'     88'  YP
+!       `8bd8'  88oobY' 88ooooo `8bo.   88    88 88    88 88oobY' 8P      88ooooo `8bo.
+!       .dPYb.  88`8b   88~~~~~   `Y8b. 88    88 88    88 88`8b   8b      88~~~~~   `Y8b.
+!      .8P  Y8. 88 `88. 88.     db   8D `8b  d8' 88b  d88 88 `88. Y8b  d8 88.     db   8D
+!      YP    YP 88   YD Y88888P `8888Y'  `Y88P'  ~Y8888P' 88   YD  `Y88P' Y88888P `8888Y'
+
+Xft.dpi:     96
+Xft.hinting: true
+
+URxvt.depth:          32
+URxvt.scrollBar:      false
+URxvt.font:           xft:FantasqueSansMono:size=8:antialias=true
+URxvt.boldFont:       xft:FantasqueSansMono:bold:size=8:antialias=true
+URxvt.italicFont:     xft:FantasqueSansMono:italic:size=8:antialias=true
+URxvt.boldItalicFont: xft:FantasqueSansMono:bold:italic:size=8:antialias=true
+
+URxvt.cursorBlink:    1
+URxvt.url-launcher:   /usr/bin/firefox
+URxvt.loginShell:     true
+URxvt.fading:         30
+URxvt.internalBorder: 0
+URxvt.externalBorder: 0
+URxvt.letterSpace:    -1
+
+! Base16 Solarized
+! Scheme: Ethan Schoonover (http://ethanschoonover.com/solarized)
+
+#define base00 #002b36
+#define base01 #073642
+#define base02 #586e75
+#define base03 #657b83
+#define base04 #839496
+#define base05 #93a1a1
+#define base06 #eee8d5
+#define base07 #fdf6e3
+#define base08 #dc322f
+#define base09 #cb4b16
+#define base0A #b58900
+#define base0B #859900
+#define base0C #2aa198
+#define base0D #268bd2
+#define base0E #6c71c4
+#define base0F #d33682
+
+*.foreground:   base05
+*.background:   base00
+*.cursorColor:  base05
+
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+
+*.color8:       base03
+*.color9:       base08
+*.color10:      base0B
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
+*.color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*.color16:      base09
+*.color17:      base0F
+*.color18:      base01
+*.color19:      base02
+*.color20:      base04
+*.color21:      base06
+
+! --- ~/.Xresources ------------------------------------------------------------
+! ------------------------------------------------------------------------------
+! --- generated with 4bit Terminal Color Scheme Designer -----------------------
+! ------------------------------------------------------------------------------
+! --- http://ciembor.github.com/4bit -------------------------------------------
+! ------------------------------------------------------------------------------
+
+! --- special colors ---
+
+! *background: #1a1618
+! *foreground: #c7aa95
+
+! --- standard colors ---
+
+! *color0: #000000
+! *color8: #262626
+! *color1: #b8784b
+! *color9: #d4ad91
+! *color2: #4bb878
+! *color10: #91d4ad
+! *color3: #8bb84b
+! *color11: #b8d491
+! *color4: #784bb8
+! *color12: #ad91d4
+! *color5: #b84b8b
+! *color13: #d491b8
+! *color6: #4b8bb8
+! *color14: #91b8d4
+! *color7: #bdbdbd
+! *color15: #cacaca
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------
+
+URxvt.perl-ext-common: default,clipboard
+URxvt.iso14755: False
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
